@@ -10,7 +10,7 @@ To be an effective red team ethical hacker, **you need to think like a hacker** 
 
 gobuster -u http://fakebank.thm -w wordlist.txt dir
 
-# Explanation of the Command
+## Explanation of the Command
 
     gobuster: A tool used for brute forcing URIs (directories/files) and DNS subdomains.
 
@@ -21,7 +21,8 @@ gobuster -u http://fakebank.thm -w wordlist.txt dir
     dir: Mode of operation telling gobuster to brute force directories.
 
  
-# Results / Observations
+## Results / Observations
 
 -Found several hidden directories on the fakebank.thm web server.
+
 -was able to transfer myself some money from a hacked account through a secure lab within the THM challenge.
