@@ -1,0 +1,33 @@
+# Search Skills
+
+This module covers efficient search techniques for cybersecurity and technical research, including specialized search engines and vulnerability databases.
+
+## Key Topics
+
+- **Identifying Bogus Cryptography ("Snake Oil")**  
+  Learn to recognize fraudulent or weak cryptographic methods and products.
+
+- **Linux Network Tools**  
+  Understand that `netstat` is deprecated in modern Linux and replaced by:
+  - `ss` → socket statistics and active connections.
+  - `ip` → network interface, routing, and address management.
+
+- **Advanced Google Search**  
+  Use operators like:
+  - `filetype:pdf` → search results limited to PDF files.
+  - Other operators to refine and target search queries.
+
+- **Specialized Search Engines & Databases**
+  - **Shodan** → search for internet-exposed devices and services.
+  - **Censys** → internet-wide scanning and asset discovery.
+  - **VirusTotal** → scan files/URLs with multiple antivirus engines.
+  - **Have I Been Pwned** → check if accounts/emails have been compromised.
+
+- **Vulnerability Research**
+  - **CVEs (Common Vulnerabilities and Exposures)** → standard identifiers for security flaws.
+  - **Exploit Database** → publicly available exploits and PoCs.
+  - **GitHub** → repositories containing CVE references, exploit code, or security research.
+
+---
+
+This skill set enables faster, more accurate information gathering for security assessments, incident response, and research.
