@@ -1,3 +1,4 @@
+<img width="793" height="565" alt="Screenshot_1" src="https://github.com/user-attachments/assets/bd27fed9-4ece-46a0-b723-c0ddae9c6ed8" />
 # Bandit Level 4 → Level 5
 
 ### Level Goal
