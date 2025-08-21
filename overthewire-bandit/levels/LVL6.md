@@ -20,3 +20,4 @@ find . -type f -size 1033c ! -executable
 
 Read the content of the file found
 cat ./maybeinhere07/.file2
+The password : HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
