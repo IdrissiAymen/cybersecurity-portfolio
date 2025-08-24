@@ -1,7 +1,7 @@
 
 <img width="622" height="135" alt="overthewire4" src="https://github.com/user-attachments/assets/739303a9-34b9-4011-a1bd-ba4744a748be" />
 
-## Bandit Level 2 → Level 3
+## Bandit Level 5 → Level 6
 
 ### Challenge
 The password for the next level is stored in a file somewhere under the `inhere` directory and has the following properties:
