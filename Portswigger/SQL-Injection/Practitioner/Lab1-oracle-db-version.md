@@ -5,6 +5,8 @@
 **Category:** SQL Injection → Practitioner  
 **Objective:** Display the database version string.
 
+**Link:** [PortSwigger Lab – Querying the Database Type and Version on Oracle](https://portswigger.net/web-security/sql-injection/examining-the-database/lab-querying-database-version-oracle)
+
 ---
 
 ## Steps I Took
