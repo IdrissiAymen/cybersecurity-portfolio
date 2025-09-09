@@ -1,6 +1,6 @@
 <img width="601" height="400" alt="Screenshot_5" src="https://github.com/user-attachments/assets/c245cd8a-421f-4d1f-981e-b6220135f672" />
 
-# Bandit Challenge: Exploiting a Cron Job to Retrieve the Next Level Password
+# Bandit Challenge 21 --> 22: Exploiting a Cron Job to Retrieve the Next Level Password
 
 **Objective:**  
 The goal of this challenge was to retrieve the password for the next Bandit level (bandit22) by investigating a cron job that runs automatically at regular intervals.
