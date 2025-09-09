@@ -2,7 +2,7 @@
 
 <img width="600" height="345" alt="Screenshot_4" src="https://github.com/user-attachments/assets/9509c923-31ee-4ed8-8078-5746e9971c3b" />
 
-# Bandit Challenge: Using Netcat to Capture the Next Level Password
+# Bandit Challenge 20 --> 21: Using Netcat to Capture the Next Level Password
 
 **Objective:**  
 The goal of this challenge was to interact with a setuid binary (`suconnect`) that connects to a specified port on localhost, reads the previous level's password, and returns the next level's password. The task was to use Netcat (`nc`) to capture this communication.
