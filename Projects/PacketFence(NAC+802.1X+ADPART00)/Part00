@@ -1,0 +1,12 @@
+PART 0 – PREPARATION (BEFORE ANYTHING)
+0.1 Download everything
+
+✔ PacketFence ZEN VM:
+PacketFence-ZEN-v15.0.0.zip
+
+✔ WinSCP (for transferring the script):
+winscp.net
+
+✔ The script I received by my teacher:
+pf15-zen-trim.sh
+(heavier optimization script)
