@@ -18,6 +18,7 @@ print(files)
 ```
 This lets us see all files in the directory.
 I added an if statement to skip the script itself so it won't encrypt itself.
+
 <img width="1372" height="811" alt="py2" src="https://github.com/user-attachments/assets/6c3022a9-4001-4ace-ad70-c3ade5241f10" />
 
 ---
@@ -32,6 +33,7 @@ if os.path.isfile(file):
     files.append(file)
 ```
 Now only real files are encrypted, folders are skipped.
+
 <img width="1371" height="821" alt="py3" src="https://github.com/user-attachments/assets/261cd9bf-b30a-49f3-a63e-278a55612307" />
 <img width="1460" height="898" alt="py4" src="https://github.com/user-attachments/assets/799f5766-91a2-470b-8bd5-a26ea9441e4f" />
 <img width="1234" height="753" alt="py5" src="https://github.com/user-attachments/assets/06cbd08c-e4b8-4167-869f-db0b3b93f534" />
@@ -54,6 +56,7 @@ with open("thekey.key", "wb") as thekey:
 
 🔑 Important: The key is saved in thekey.key.
 Without it, the files cannot be decrypted.
+
 <img width="1369" height="830" alt="py8" src="https://github.com/user-attachments/assets/54949d31-cdc3-4b1a-8ac7-ef11b504a336" />
 
 ### Encrypt files
@@ -90,6 +93,7 @@ for file in files:
 ```
 <img width="1322" height="845" alt="py11" src="https://github.com/user-attachments/assets/a2574645-6cd1-4d0e-801b-e328386e4ac0" />
 <img width="1245" height="801" alt="py12" src="https://github.com/user-attachments/assets/ab29acd2-afe0-4702-a8b0-882c4fd12df8" />
+
 # Step 6 – Simulate Ransom Message
 
 Added a simple message and passphrase check:
