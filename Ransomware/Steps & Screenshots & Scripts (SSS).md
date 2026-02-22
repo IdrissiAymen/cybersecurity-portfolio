@@ -94,7 +94,7 @@ for file in files:
 <img width="1322" height="845" alt="py11" src="https://github.com/user-attachments/assets/a2574645-6cd1-4d0e-801b-e328386e4ac0" />
 <img width="1245" height="801" alt="py12" src="https://github.com/user-attachments/assets/ab29acd2-afe0-4702-a8b0-882c4fd12df8" />
 
-## Step 6 – Simulate Ransom Message
+# Step 6 – Simulate Ransom Message
 
 Added a simple message and passphrase check:
 
