@@ -7,7 +7,7 @@
 [![SOAR](https://img.shields.io/badge/SOAR-n8n_2.11.4-orange)](https://n8n.io)
 [![License](https://img.shields.io/badge/License-Educational-green)](https://github.com/IdrissiAymen)
 
-> Developed as a **Final Year Project (PFA)** during a Cybersecurity internship at **Portnet S.A., Morocco** — a fully operational SOC pipeline built from the ground up across 5 VMware virtual machines. This project replicates real-world SOC operations: threat detection, automated containment, SOAR-driven alert enrichment, dynamic risk scoring, MITRE ATT&CK mapping, and live security monitoring — built entirely on enterprise-grade open-source tools with no managed services or cloud shortcuts.
+> Developed as a **4th Year Project (PFA)** during a Cybersecurity internship at **Portnet S.A., Morocco** — a fully operational SOC pipeline built from the ground up across 5 VMware virtual machines. This project replicates real-world SOC operations: threat detection, automated containment, SOAR-driven alert enrichment, dynamic risk scoring, MITRE ATT&CK mapping, and live security monitoring — built entirely on enterprise-grade open-source tools with no managed services or cloud shortcuts.
 
 ---
 
