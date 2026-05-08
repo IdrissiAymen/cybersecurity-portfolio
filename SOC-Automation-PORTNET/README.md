@@ -1,3 +1,5 @@
+[README.md](https://github.com/user-attachments/files/27518840/README.md)
+
 
 # 🛡️ SOC Automation Lab — End-to-End Detection & Response Pipeline
 
@@ -7,7 +9,7 @@
 [![SOAR](https://img.shields.io/badge/SOAR-n8n_2.11.4-orange)](https://n8n.io)
 [![License](https://img.shields.io/badge/License-Educational-green)](https://github.com/IdrissiAymen)
 
-> Developed as a **4th Year Project (PFA)** during a Cybersecurity internship at **Portnet S.A., Morocco** — a fully operational SOC pipeline built from the ground up across 5 VMware virtual machines. This project replicates real-world SOC operations: threat detection, automated containment, SOAR-driven alert enrichment, dynamic risk scoring, MITRE ATT&CK mapping, and live security monitoring — built entirely on enterprise-grade open-source tools with no managed services or cloud shortcuts.
+> Developed as a **Final Year Project (PFA)** during a Cybersecurity internship at **Portnet S.A., Morocco** — a fully operational SOC pipeline built from the ground up across 5 VMware virtual machines. This project replicates real-world SOC operations: threat detection, automated containment, SOAR-driven alert enrichment, dynamic risk scoring, MITRE ATT&CK mapping, and live security monitoring — built entirely on enterprise-grade open-source tools with no managed services or cloud shortcuts.
 
 ---
 
@@ -248,17 +250,16 @@ SOC-Automation-Lab/
 ## 👤 Author
 
 **Aymen Idrissi**
-**https://www.linkedin.com/in/aymen-karkouri-idrissi-653259334/**
 *Cybersecurity Intern @ Portnet S.A., Morocco*
 *Cybersecurity Engineering Student — Mundiapolis University*
 
 This project was developed as a **Final Year Project (PFA)** in a professional internship setting.
 
 [![GitHub](https://img.shields.io/badge/GitHub-IdrissiAymen-181717?logo=github)](https://github.com/IdrissiAymen)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Aymen_Idrissi-0077B5?logo=linkedin)](https://www.linkedin.com/in/aymen-karkouri-idrissi-653259334/)
 
 ---
 
 ## ⚠️ Disclaimer
 
 Educational purposes only. All attacks were performed inside a fully isolated virtual network with no external exposure. No real systems were targeted.
-
