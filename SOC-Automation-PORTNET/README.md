@@ -1,5 +1,5 @@
 
-[README.md](https://github.com/user-attachments/files/27518238/README.md)# 🛡️ SOC Automation Lab — End-to-End Detection & Response Pipeline
+# 🛡️ SOC Automation Lab — End-to-End Detection & Response Pipeline
 
 [![Status](https://img.shields.io/badge/Status-Complete-brightgreen)](https://github.com/IdrissiAymen)
 [![Platform](https://img.shields.io/badge/Platform-VMware_Workstation-blue)](https://github.com/IdrissiAymen)
