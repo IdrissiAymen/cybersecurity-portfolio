@@ -236,7 +236,8 @@ SOC-Automation-Lab/
 
 | Architecture overview | n8n Workflow |
 |---|---|
-| ![Wazuh Alerts](screenshots/wazuh-alerts.png) | ![n8n Workflow](screenshots/n8n-workflow.png) |
+| ![Wazuh Alerts](screenshots/wazuh-alerts.png) | ![n8n Workflow]<img width="1509" height="284" alt="upgraded n8n workflow to send custom message to my gmail account 20" src="https://github.com/user-attachments/assets/79f86bbf-81a7-4767-aef7-9bfb0bef2b04" />
+ |
 
 | TheHive Alert | Cortex IOC Enrichment | Slack Notification |
 |---|---|---|
