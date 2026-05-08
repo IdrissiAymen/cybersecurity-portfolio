@@ -1,12 +1,21 @@
-# 🛡️ SOC Automation Lab — End-to-End Detection & Response Pipeline
 
-### 🎯 Project Description
-Developed as a Final Year Project (PFA) during a Cybersecurity internship at Portnet S.A., Morocco — a fully operational SOC pipeline built from the ground up across 5 VMware virtual machines. This project replicates real-world SOC operations: threat detection, automated containment, SOAR-driven alert enrichment, dynamic risk scoring, MITRE ATT&CK mapping, and live security monitoring — built entirely on enterprise-grade open-source tools with no managed services or cloud shortcuts.
+[README.md](https://github.com/user-attachments/files/27518238/README.md)# 🛡️ SOC Automation Lab — End-to-End Detection & Response Pipeline
 
+[![Status](https://img.shields.io/badge/Status-Complete-brightgreen)](https://github.com/IdrissiAymen)
+[![Platform](https://img.shields.io/badge/Platform-VMware_Workstation-blue)](https://github.com/IdrissiAymen)
+[![SIEM](https://img.shields.io/badge/SIEM-Wazuh_4.x-red)](https://wazuh.com)
+[![SOAR](https://img.shields.io/badge/SOAR-n8n_2.11.4-orange)](https://n8n.io)
+[![License](https://img.shields.io/badge/License-Educational-green)](https://github.com/IdrissiAymen)
 
-### ⚡ What Happens When Kali Attacks
+> Developed as a **Final Year Project (PFA)** during a Cybersecurity internship at **Portnet S.A., Morocco** — a fully operational SOC pipeline built from the ground up across 5 VMware virtual machines. This project replicates real-world SOC operations: threat detection, automated containment, SOAR-driven alert enrichment, dynamic risk scoring, MITRE ATT&CK mapping, and live security monitoring — built entirely on enterprise-grade open-source tools with no managed services or cloud shortcuts.
 
-When Kali Linux launches a brute force attack against the Windows 10 victim, the following happens automatically — zero human intervention:
+---
+
+## ⚡ What Happens When Kali Attacks
+
+When Kali Linux launches a brute force attack against the Windows 10 victim, the following happens **automatically — zero human intervention:**
+
+```
 1. Wazuh         →  Detects the attack within seconds (rule 60204, level 10)
 2. Windows FW    →  Auto-blocks attacker IP via netsh (active response, 300s)
 3. Slack         →  Instant SOC channel notification
@@ -14,9 +23,15 @@ When Kali Linux launches a brute force attack against the Windows 10 victim, the
 5. TheHive       →  Receives a fully enriched, structured alert
 6. Gmail         →  Formatted email with risk label, MITRE details, agent info
 7. Grafana       →  Live security dashboard updates in real time
-The analyst then opens the TheHive alert, adds the attacker IP as an observable, and triggers Cortex (AbuseIPDB + VirusTotal) for deep IOC enrichment — all from the same interface.
+```
 
-### 🏗️ Architecture
+The analyst then opens the TheHive alert, adds the attacker IP as an observable, and triggers **Cortex** (AbuseIPDB + VirusTotal) for deep IOC enrichment — all from the same interface.
+
+---
+
+## 🏗️ Architecture
+
+```
 ┌─────────────────────────────────────────────────────────┐
 │                    ATTACK PHASE                         │
 │  Kali Linux (192.168.228.30)                            │
@@ -64,22 +79,77 @@ The analyst then opens the TheHive alert, adds the attacker IP as an observable,
 │  Grafana (192.168.228.10:3000)                          │
 │  └─ Live dashboard on wazuh-alerts-4.x-* index          │
 └─────────────────────────────────────────────────────────┘
+```
 
-🖥️ Virtual Machines
-VMIPOSRAMRoleWazuh Server192.168.228.10Ubuntu 24.044 GBSIEM · Active Response · GrafanaWindows 10192.168.228.20Windows 104 GBVictim endpointKali Linux192.168.228.30Kali4 GBAttackerTheHive + Cortex192.168.228.40Ubuntu 24.048 GBCase management · IOC enrichmentn8n192.168.228.50Ubuntu 24.042 GBSOAR orchestration
-All VMs run on VMware Workstation — Host-only network (VMnet1) + NAT for external API access.
+---
 
-🔧 Tools & Versions
-ToolVersionRoleWazuh4.xSIEM / EDR — detection, alerting, active responseSysmonSwiftOnSecurity configEnhanced Windows event telemetryTheHive5.6.1Security incident case managementCortex3.2.1IOC enrichment enginen8n2.11.4SOAR workflow automationGrafanaLatestLive security metrics dashboardAbuseIPDBAPI v2IP abuse reputation scoringVirusTotalAPI v3IP / hash / domain analysisSlackIncoming WebhookReal-time SOC notificationsGmailSMTP + App PasswordEmail alert delivery
+## 🖥️ Virtual Machines
 
-✅ Features
-CapabilityStatusBrute force detection — SSH, SMB, FTP, RDP✅ AutomatedSAM database dump detection✅ AutomatedActive response — auto IP block via netsh✅ AutomatedSlack real-time SOC notification✅ AutomatedDynamic risk scoring (0–100)✅ AutomatedMITRE ATT&CK tactic & technique tagging✅ AutomatedTheHive alert creation✅ AutomatedGmail alert with risk label + MITRE context✅ AutomatedIOC enrichment — AbuseIPDB + VirusTotal🔵 Manual trigger in TheHiveGrafana live security dashboard🟢 Live
+| VM | IP | OS | RAM | Role |
+|---|---|---|---|---|
+| Wazuh Server | 192.168.228.10 | Ubuntu 24.04 | 4 GB | SIEM · Active Response · Grafana |
+| Windows 10 | 192.168.228.20 | Windows 10 | 4 GB | Victim endpoint |
+| Kali Linux | 192.168.228.30 | Kali | 4 GB | Attacker |
+| TheHive + Cortex | 192.168.228.40 | Ubuntu 24.04 | 8 GB | Case management · IOC enrichment |
+| n8n | 192.168.228.50 | Ubuntu 24.04 | 2 GB | SOAR orchestration |
 
-🎯 Attack Scenarios Tested
-AttackToolWazuh RuleLevelMITRESMB Brute Forcesmbclient60122, 6020410T1110SSH Brute ForceHydra60122, 6010610T1110FTP Brute ForceHydra601045T1110RDP Brute ForceHydra601045T1110SAM Hive Dumpreg.exe9202614T1003.002Account Discoverynet.exe920393T1087PowerShell ExecutionPowerShell918164T1082
+All VMs run on **VMware Workstation** — Host-only network (VMnet1) + NAT for external API access.
 
-📊 Risk Scoring System
+---
+
+## 🔧 Tools & Versions
+
+| Tool | Version | Role |
+|---|---|---|
+| Wazuh | 4.x | SIEM / EDR — detection, alerting, active response |
+| Sysmon | SwiftOnSecurity config | Enhanced Windows event telemetry |
+| TheHive | 5.6.1 | Security incident case management |
+| Cortex | 3.2.1 | IOC enrichment engine |
+| n8n | 2.11.4 | SOAR workflow automation |
+| Grafana | Latest | Live security metrics dashboard |
+| AbuseIPDB | API v2 | IP abuse reputation scoring |
+| VirusTotal | API v3 | IP / hash / domain analysis |
+| Slack | Incoming Webhook | Real-time SOC notifications |
+| Gmail | SMTP + App Password | Email alert delivery |
+
+---
+
+## ✅ Features
+
+| Capability | Status |
+|---|---|
+| Brute force detection — SSH, SMB, FTP, RDP | ✅ Automated |
+| SAM database dump detection | ✅ Automated |
+| Active response — auto IP block via netsh | ✅ Automated |
+| Slack real-time SOC notification | ✅ Automated |
+| Dynamic risk scoring (0–100) | ✅ Automated |
+| MITRE ATT&CK tactic & technique tagging | ✅ Automated |
+| TheHive alert creation | ✅ Automated |
+| Gmail alert with risk label + MITRE context | ✅ Automated |
+| IOC enrichment — AbuseIPDB + VirusTotal | 🔵 Manual trigger in TheHive |
+| Grafana live security dashboard | 🟢 Live |
+
+---
+
+## 🎯 Attack Scenarios Tested
+
+| Attack | Tool | Wazuh Rule | Level | MITRE |
+|---|---|---|---|---|
+| SMB Brute Force | smbclient | 60122, 60204 | 10 | T1110 |
+| SSH Brute Force | Hydra | 60122, 60106 | 10 | T1110 |
+| FTP Brute Force | Hydra | 60104 | 5 | T1110 |
+| RDP Brute Force | Hydra | 60104 | 5 | T1110 |
+| SAM Hive Dump | reg.exe | 92026 | 14 | T1003.002 |
+| Account Discovery | net.exe | 92039 | 3 | T1087 |
+| PowerShell Execution | PowerShell | 91816 | 4 | T1082 |
+
+---
+
+## 📊 Risk Scoring System
+
 Risk score is calculated dynamically in the n8n Code node on every alert:
+
+```
 Base score = Wazuh rule level (1–15)
 
 MITRE tactic bonuses:
@@ -97,8 +167,13 @@ Labels:
   25–49  → MEDIUM
   50–74  → HIGH
   75–100 → CRITICAL
+```
 
-⚙️ n8n SOAR Workflow
+---
+
+## ⚙️ n8n SOAR Workflow
+
+```
 Webhook (receives raw Wazuh alert JSON)
         │
         ▼
@@ -116,11 +191,18 @@ HTTP Request → TheHive enriched alert
         │
         ▼
 Send Email → Gmail alert (risk label + MITRE + agent info)
+```
 
-🔒 Active Response — Auto IP Block
-When a brute force alert fires (rules 60122, 60204, 60115), Wazuh tells the Windows agent to execute netsh.exe — blocking the attacker's IP in Windows Firewall for 300 seconds automatically. No analyst action required.
-Relevant ossec.conf block:
-xml<command>
+---
+
+## 🔒 Active Response — Auto IP Block
+
+When a brute force alert fires (rules 60122, 60204, 60115), Wazuh tells the Windows agent to execute `netsh.exe` — blocking the attacker's IP in Windows Firewall for **300 seconds automatically**. No analyst action required.
+
+Relevant `ossec.conf` block:
+
+```xml
+<command>
   <name>netsh</name>
   <executable>netsh.exe</executable>
   <timeout_allowed>yes</timeout_allowed>
@@ -132,8 +214,13 @@ xml<command>
   <rules_id>60122,60204,60115</rules_id>
   <timeout>300</timeout>
 </active-response>
+```
 
-📁 Repository Structure
+---
+
+## 📁 Repository Structure
+
+```
 SOC-Automation-Lab/
 ├── README.md               ← You are here
 ├── ARCHITECTURE.md         ← Full technical breakdown: ports, flow, node descriptions
@@ -142,17 +229,35 @@ SOC-Automation-Lab/
 │   ├── custom-thehive.py   ← Wazuh integration script (TheHive + n8n)
 │   └── ossec-active-response.xml  ← Active response config snippet
 └── screenshots/            ← Proof screenshots (flat structure)
+```
 
-📸 Screenshots
-Architecture overviewn8n WorkflowShow ImageShow Image
-TheHive AlertCortex IOC EnrichmentSlack NotificationShow ImageShow ImageShow Image
+---
 
-👤 Author
-KARKOURI IDRISSI Aymen
-Cybersecurity Intern @ Portnet S.A., Morocco
-Cybersecurity Engineering Student — Mundiapolis University
-This project was developed as a Penultimate Year Project (PFA) in a professional internship setting.
-https://www.linkedin.com/in/aymen-karkouri-idrissi-653259334/
+## 📸 Screenshots
 
-⚠️ Disclaimer
+| Architecture overview | n8n Workflow |
+|---|---|
+| ![Wazuh Alerts](screenshots/wazuh-alerts.png) | ![n8n Workflow](screenshots/n8n-workflow.png) |
+
+| TheHive Alert | Cortex IOC Enrichment | Slack Notification |
+|---|---|---|
+| ![TheHive](screenshots/thehive-alert.png) | ![Cortex](screenshots/cortex-abuseipdb.png) | ![Slack](screenshots/slack-notification.png) |
+
+---
+
+## 👤 Author
+
+**Aymen Idrissi**
+*Cybersecurity Intern @ Portnet S.A., Morocco*
+*Cybersecurity Engineering Student — Mundiapolis University*
+
+This project was developed as a **Final Year Project (PFA)** in a professional internship setting.
+
+[![GitHub](https://img.shields.io/badge/GitHub-IdrissiAymen-181717?logo=github)](https://github.com/IdrissiAymen)
+
+---
+
+## ⚠️ Disclaimer
+
 Educational purposes only. All attacks were performed inside a fully isolated virtual network with no external exposure. No real systems were targeted.
+
