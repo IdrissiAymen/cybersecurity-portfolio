@@ -248,6 +248,7 @@ SOC-Automation-Lab/
 ## 👤 Author
 
 **Aymen Idrissi**
+**https://www.linkedin.com/in/aymen-karkouri-idrissi-653259334/**
 *Cybersecurity Intern @ Portnet S.A., Morocco*
 *Cybersecurity Engineering Student — Mundiapolis University*
 
