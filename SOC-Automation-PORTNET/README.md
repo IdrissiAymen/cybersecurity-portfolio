@@ -79,6 +79,7 @@ The analyst then opens the TheHive alert, adds the attacker IP as an observable,
 │  └─ Live dashboard on wazuh-alerts-4.x-* index          │
 └─────────────────────────────────────────────────────────┘
 ```
+<img width="1800" height="2200" alt="Untitled design" src="https://github.com/user-attachments/assets/e6fc9984-7194-458e-a891-1a385a1eb301" />
 
 ---
 
