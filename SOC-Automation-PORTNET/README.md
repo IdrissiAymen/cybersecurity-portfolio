@@ -235,9 +235,6 @@ SOC-Automation-Lab/
 
 ## 📸 Screenshots
 
-### Architecture
-![Architecture](screenshots/architecture.png)
-
 ### n8n Workflow
 <img width="1509" alt="n8n workflow" src="https://github.com/user-attachments/assets/79f86bbf-81a7-4767-aef7-9bfb0bef2b04" />
 
