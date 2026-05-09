@@ -242,7 +242,9 @@ SOC-Automation-Lab/
 
 | TheHive Alert | Cortex IOC Enrichment | Slack Notification |
 |---|---|---|
-| ![TheHive](screenshots/thehive-alert.png) | ![Cortex](screenshots/cortex-abuseipdb.png) | ![Slack](screenshots/slack-notification.png) |
+| <img width="1918" height="893" alt="Test alert for The hive integration 6" src="https://github.com/user-attachments/assets/b215bc3d-3e15-4907-b058-730dfc1259f6" />
+ | ![Cortex](screenshots/cortex-abuseipdb.png) | <img width="1850" height="694" alt="n8n alerts on slack #new-channel 11" src="https://github.com/user-attachments/assets/03c89082-a35f-4a32-a045-2db1f81e4c12" />
+ |
 
 ---
 
