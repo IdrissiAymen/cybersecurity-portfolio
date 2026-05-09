@@ -235,18 +235,20 @@ SOC-Automation-Lab/
 
 ## 📸 Screenshots
 
-| Architecture overview | n8n Workflow |
-|---|---|
-| ![Wazuh Alerts](screenshots/wazuh-alerts.png) | ![n8n Workflow]<img width="1509" height="284" alt="upgraded n8n workflow to send custom message to my gmail account 20" src="https://github.com/user-attachments/assets/79f86bbf-81a7-4767-aef7-9bfb0bef2b04" />
- |
+### Architecture
+![Architecture](screenshots/architecture.png)
 
-| TheHive Alert | Cortex IOC Enrichment | Slack Notification |
-|---|---|---|
-| <img width="1918" height="893" alt="Test alert for The hive integration 6" src="https://github.com/user-attachments/assets/b215bc3d-3e15-4907-b058-730dfc1259f6" />
- | ![Cortex](screenshots/cortex-abuseipdb.png) | <img width="1850" height="694" alt="n8n alerts on slack #new-channel 11" src="https://github.com/user-attachments/assets/03c89082-a35f-4a32-a045-2db1f81e4c12" />
- |
+### n8n Workflow
+<img width="1509" alt="n8n workflow" src="https://github.com/user-attachments/assets/79f86bbf-81a7-4767-aef7-9bfb0bef2b04" />
 
----
+### TheHive Alert
+<img width="1918" alt="TheHive alert" src="https://github.com/user-attachments/assets/b215bc3d-3e15-4907-b058-730dfc1259f6" />
+
+### Cortex IOC Enrichment
+![Cortex](screenshots/cortex-abuseipdb.png)
+
+### Slack Notification
+<img width="1850" alt="Slack notification" src="https://github.com/user-attachments/assets/03c89082-a35f-4a32-a045-2db1f81e4c12" />
 
 ## 👤 Author
 
