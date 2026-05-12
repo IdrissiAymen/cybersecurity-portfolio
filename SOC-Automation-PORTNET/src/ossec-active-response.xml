@@ -1,1 +1,27 @@
+<!--
+  ossec-active-response.xml
+  These are the blocks added to /var/ossec/etc/ossec.conf
+  Do NOT replace the full ossec.conf — only add these blocks.
+-->
 
+<!-- 1. Register the netsh command -->
+<command>
+  <name>netsh</name>
+  <executable>netsh.exe</executable>
+  <timeout_allowed>yes</timeout_allowed>
+</command>
+
+<!-- 2. Active response rule — auto-block brute force IPs for 300 seconds -->
+<active-response>
+  <command>netsh</command>
+  <location>local</location>
+  <rules_id>60122,60204,60115</rules_id>
+  <timeout>300</timeout>
+</active-response>
+
+<!-- 3. Integration — forward alerts level 7+ to custom-thehive.py -->
+<integration>
+  <name>custom-thehive</name>
+  <level>7</level>
+  <alert_format>json</alert_format>
+</integration>
