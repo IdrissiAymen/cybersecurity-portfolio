@@ -1,6 +1,6 @@
 # 🛠️ Troubleshooting — SOC Automation Lab
 
-Real errors hit during the 15-day build, with exact fixes. No fluff.
+Real errors hit during the build, with exact fixes. No fluff.
 
 ---
 
